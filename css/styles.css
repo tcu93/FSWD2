@@ -1,21 +1,6 @@
-/***** Common *****/
-h1 {
-	color: #7d97ad;
-	font-size: 24px;
-	text-transform: capitalize;
-}
-
-hr {
-	background-color: #7d97ad;
-	height: 2px;
-	margin-top: 1px;
-	margin-bottom: 16px;
-}
-
-* {
-	box-sizing: border-box;
-}
-
+/***** Header *****/
+/* Udacity Reviewer: I might've completely botched the use of these id selectors.
+   It seems to work, but please let me know if I've mis-used them here - thx */
 #ulogo {
 	width: 70px;
 	height: 70px;
@@ -25,17 +10,17 @@ hr {
 	font-size: 42px;
 	text-transform: uppercase;
   margin: 0;
-	font-family: Helvetica;
+	font-family: Verdana;
 	font-weight: 100;
 	color: #2d3c49;
 }
 
 #namecomment {
-	color: #2d3c49;
+	color: #2d3c49; /* per requirement pdf template */
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0;
-	font-family: Helvetica;
+	font-family: Verdana;
 }
 
 /* main */
@@ -45,7 +30,14 @@ hr {
 	padding-bottom: 10px;
 }
 
-/* Featured Work */
+/***** Featured Work *****/
+h1 {              /* "Featured Work" */
+	color: #7d97ad; /* per requirement pdf template */
+	font-size: 20px;
+	text-transform: capitalize;
+	font-family: Verdana;
+}
+
 .featured-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -53,17 +45,18 @@ hr {
 }
 
 .featured-item {
-	color: #2d3c49;
+	color: #2d3c49; /* per requirement pdf template */
 	text-align: center;
-	margin: 8px 4px 8px 4px;
+	font-size: 12px;
 }
 
 .featured-title {
+	text-transform: uppercase;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	color: #2d3c49;
 	font-size: 24px;
-	text-transform: uppercase;
+
 }
 
 .work-description {
@@ -71,9 +64,10 @@ hr {
 	margin-bottom: 0;
 }
 
-/*** standard desktop >=768 ***/
+/***** standard desktop >=768 *****/
+/* Udacity Reviewer: Is a max-width a necessity here? */
 @media screen and (min-width: 768px) {
-    .header-icon {
+  .header-icon {
 		display: inline-block;
 	}
 
@@ -89,12 +83,13 @@ hr {
 }
 
 /*** high resolution desktop >=960 ***/
+/* Udacity Reviewer: Is a max-width a necessity here? */
 @media screen and (min-width: 960px) {
 	body{
-		width: 960px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
+		width: 960px;
 	}
 
 	.featured-image {
@@ -126,8 +121,8 @@ hr {
 
 /*** standard handheld ***/
 @media screen and (max-width: 360px) {
-	body {
-		padding: 2px;
+	  body {
+		    padding: 2px;
 	}
 
   .header-icon {
