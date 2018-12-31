@@ -83,7 +83,8 @@ h1 {              /* "Featured Work" */
   .header-icon {
 		display: inline-block;
 		/* NOTE TO REVIEWER: changing this display to flex causes my icons to float
-		                     in a vertical line to left of screen - what am I missing? */
+		                     in a vertical line to left of screen - what am I missing?
+												 Could it be a browser issue? */
 	}
 
 	.header-info {
