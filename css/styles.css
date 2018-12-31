@@ -1,29 +1,34 @@
+body {
+	font-family: 'Carme';
+	font-size: 12px;
+	color: #2d3c49;
+}
 /***** Header *****/
+
 /* Udacity Reviewer: I might've completely botched the use of these id selectors.
    It seems to work, but please let me know if I've mis-used them here - thx */
-#ulogo {
-	width: 70px;
-	height: 70px;
+#logo {
+	width: 72px;
+	height: 72px;
 }
 
-#name {
+#header-name {
 	font-size: 42px;
 	text-transform: uppercase;
   margin: 0;
-	font-family: Verdana;
 	font-weight: 100;
 	color: #2d3c49;
 }
 
-#namecomment {
+#header-comment {
 	color: #2d3c49; /* per requirement pdf template */
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0;
-	font-family: Verdana;
 }
 
 /* main */
+
 .main-image {
 	width: 100%;
 	float: right;
@@ -31,11 +36,18 @@
 }
 
 /***** Featured Work *****/
+
+hr {
+	height: 2px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background-color: #7d97ad;
+}
+
 h1 {              /* "Featured Work" */
 	color: #7d97ad; /* per requirement pdf template */
-	font-size: 20px;
+	font-size: 24px;
 	text-transform: capitalize;
-	font-family: Verdana;
 }
 
 .featured-container {
@@ -65,13 +77,16 @@ h1 {              /* "Featured Work" */
 }
 
 /***** standard desktop >=768 *****/
+
 /* Udacity Reviewer: Is a max-width a necessity here? */
 @media screen and (min-width: 768px) {
   .header-icon {
 		display: inline-block;
+		/* NOTE TO REVIEWER: changing this display to flex causes my icons to float
+		                     in a vertical line to left of screen - what am I missing? */
 	}
 
-	.header-titles {
+	.header-info {
 		display: inline-block;
 		text-align: right;
 		float: right;
@@ -83,6 +98,7 @@ h1 {              /* "Featured Work" */
 }
 
 /*** high resolution desktop >=960 ***/
+
 /* Udacity Reviewer: Is a max-width a necessity here? */
 @media screen and (min-width: 960px) {
 	body{
@@ -99,6 +115,7 @@ h1 {              /* "Featured Work" */
 }
 
 /*** standard tablet >360 <768 ***/
+
 @media screen and  (min-width:361px) and (max-width: 767px) {
     body {
         padding: 4px;
@@ -108,7 +125,7 @@ h1 {              /* "Featured Work" */
 		display: inline-block;
 	}
 
-	.header-titles {
+	.header-info {
 		display: inline-block;
 		text-align: right;
 		float: right;
@@ -120,6 +137,7 @@ h1 {              /* "Featured Work" */
 }
 
 /*** standard handheld ***/
+
 @media screen and (max-width: 360px) {
 	  body {
 		    padding: 2px;
@@ -129,12 +147,12 @@ h1 {              /* "Featured Work" */
 		display: block;
 	}
 
-	.header-titles {
+	.header-info {
 		display: block;
 		text-align: left;
 	}
 
 	.featured-image {
-		width: 360px;
+		width: 200px;
 	}
 }
